@@ -9,6 +9,7 @@
  * @param {Array or Object} collection: The collection over which to iterate.
  * @param {Function} action: The Function to be applied to each value in the 
  * collection
+ * @ return 
  */
 function each(collection, action) {
     if(Array.isArray(collection)) {
@@ -21,4 +22,26 @@ function each(collection, action) {
         }
     }
 }
+
+
+
+    
 module.exports.each = each;
+
+
+/* 
+identity: Function takes in any input value and treturn that value unchanged 
+
+@param { any Value }; Function takes in any input value. 
+
+@return {Any Value}; Function returns input value unchanged.
+
+
+
+
+*/ 
+ function identity(value){
+    return value; 
+    
+    }; 
+module.exports.identity = identity; 
